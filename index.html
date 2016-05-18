@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Hello...</title>
+<style type="text/css">
+#mainContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: xx-large;
+	font-weight: bold;
+	background-color: #E3F0FB;
+	border-radius: 4px;
+	padding: 10px;
+	text-align: center;
+}
+
+.buttonStyle {
+	border-radius: 4px;
+	border: thin solid #F0E020;
+	padding: 5px;
+	background-color: #F8F094;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	color: #663300;
+	width: 375px;
+}
+
+.buttonStyle:hover {
+	border: thin solid #FFCC00;
+	background-color: #FCF9D6;
+	color: #996633;
+	cursor: pointer;
+}
+.buttonStyle:active {
+	border: thin solid #99CC00;
+	background-color: #F5FFD2;
+	color: #669900;
+	cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+<div id="mainContent">
+<h1 id="helloText">Welcome to IGN!</h1>
+<p id="Content">Articles</p>
+<button id="clickButton" class="buttonStyle">"Revi3w of gr0ss synthetik skin!!!!!!mom?!!!"</button>
+</div>
+<script> 
+var myButton = document.getElementById("clickButton");
+var myText = document.getElementById("helloText");
+var myConent = document.getElementById("Content");
+
+myButton.addEventListener('click', doSomething, false)
+
+function doSomething() {
+	myText.textContent = "I reviewed arititfical skin";
+	myConent.textContent = "So just as a heads up, I hven't felt the normal skin of myself (due to a severe hole body burn) or skin of a l0ved one #foreverAlone so I don't know what skin is supposed to feel, look, or taste like. That said, let us commence the review. I started by unpackaging the skin, it wasn't packaged in an Xbox case, so I had to dock it some points. After throwing the skin against the wall of my parents basement I was thoroughlly impressed by the realistic physics and graphics of the skin (YA BRO!). I rubbed the skin on my eyeballs and felt some discomfort (NO BRO!). Overall I like Xbox better than this. 6.5/10";
+
+}
+</script>
+
+</body>
+</html>
